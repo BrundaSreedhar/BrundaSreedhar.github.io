@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Brunda Sreedhar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm <span id="name">Brunda Sreedhar</span></h1>
-    <p>Senior Software Engineer | Backend + AI Engineer</p>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-brand">
+        <h1>Brunda Sreedhar</h1>
+        <p class="role">Senior Software Engineer • Backend & AI</p>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm passionate about building impactful software, learning DevOps tools, and exploring
-      how automation makes developers' lives easier. This site is deployed automatically with
-      GitHub Actions!
-    </p>
-  </section>
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I'm passionate about building impactful software, learning DevOps tools, and exploring
+        how automation makes developers' lives easier. This site is deployed automatically with
+        GitHub Actions.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p class="muted">Technical summary — languages, frameworks, databases, cloud and AI tooling.</p>
-    <div class="skills-list">
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <p class="muted">Technical summary — languages, frameworks, databases, cloud and AI tooling.</p>
+      <div class="skills-list">
       <div class="skill-group">
         <strong>Programming:</strong>
         <span class="skill">Python</span>
@@ -68,11 +79,12 @@
         <span class="skill">LangGraph</span>
       </div>
     </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-item">
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="experience-item">
       <h3>Copado — Senior Software Engineer</h3>
       <p class="muted">Sept 2021 – Feb 2025 · Bengaluru, India</p>
       <ul>
@@ -89,19 +101,21 @@
         <li>Implemented integrations with external vendors and modernized front-end stacks to improve customer experience.</li>
       </ul>
     </div>
-  </section>
+</div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>My Cool App:</strong> A web app that helps users learn Python.</li>
-      <li><strong>Weather Dashboard:</strong> A fun JS project that shows real-time weather.</li>
-    </ul>
-  </section>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>My Cool App:</strong> A web app that helps users learn Python.</li>
+        <li><strong>Weather Dashboard:</strong> A fun JS project that shows real-time weather.</li>
+      </ul>
+    </section>
+  </main>
 
-  <footer>
-    <p>Connect with me on <a href="https://github.com/BrundaSreedhar" target="_blank">GitHub</a>.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Connect with me on <a href="https://github.com/BrundaSreedhar" target="_blank" rel="noopener">GitHub</a>.</p>
+    </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
