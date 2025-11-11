@@ -10,111 +10,178 @@
   <header class="site-header">
     <div class="site-header__inner">
       <div class="site-brand">
-        <h1>Brunda Sreedhar</h1>
+        <h1>Brunda Sreedhara Murthy</h1>
         <p class="role">Senior Software Engineer • Backend & AI</p>
       </div>
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I'm passionate about building impactful software, learning DevOps tools, and exploring
-        how automation makes developers' lives easier. This site is deployed automatically with
-        GitHub Actions.
-      </p>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <p class="muted">Technical summary — languages, frameworks, databases, cloud and AI tooling.</p>
-      <div class="skills-list">
-      <div class="skill-group">
-        <strong>Programming:</strong>
-        <span class="skill">Python</span>
-        <span class="skill">TypeScript</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Java</span>
-      </div>
-      <div class="skill-group">
-        <strong>Libraries / Frameworks:</strong>
-        <span class="skill">Express</span>
-        <span class="skill">Flask</span>
-        <span class="skill">FastAPI</span>
-        <span class="skill">Django</span>
-        <span class="skill">Spring</span>
-        <span class="skill">Node.js</span>
-      </div>
-      <div class="skill-group">
-        <strong>Databases:</strong>
-        <span class="skill">MongoDB</span>
-        <span class="skill">PostgreSQL</span>
-        <span class="skill">Redis</span>
-        <span class="skill">SQLite</span>
-      </div>
-      <div class="skill-group">
-        <strong>Cloud / DevOps:</strong>
-        <span class="skill">Kubernetes</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Git</span>
-        <span class="skill">JIRA</span>
-        <span class="skill">AWS</span>
-        <span class="skill">GCP</span>
-      </div>
-      <div class="skill-group">
-        <strong>AI:</strong>
-        <span class="skill">RAG</span>
-        <span class="skill">Model Context Protocol</span>
-        <span class="skill">Prompt Engineering</span>
-        <span class="skill">AI Agents</span>
-        <span class="skill">OpenAI API</span>
-        <span class="skill">LangChain</span>
-        <span class="skill">LangGraph</span>
-      </div>
-    </div>
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <div class="section-content">
+        <div class="about-wrapper">
+          <div class="about-text">
+            <p>Hello! I'm Brunda Sreedhara Murthy, a Senior Software Engineer based out of Seattle, Washington, with extensive experience in backend development, cloud infrastructure, and AI engineering. I specialize in building scalable systems, optimizing performance, and leading technical initiatives that drive business impact. I enjoy working on customer-facing products with experiences that make their lives easy.</p>
+            <div class="contact-info">
+              <div class="contact-links">
+                <a href="mailto:brundasreedhar@gmail.com" class="contact-link" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/brundasreedhar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/brundaSreedhar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="about-photo">
+            <img src="static/brunda_photo.jpeg" alt="Brunda Sreedhara Murthy" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="card">
-      <h2>Experience</h2>
-      <div class="experience-item">
-      <h3>Copado — Senior Software Engineer</h3>
-      <p class="muted">Sept 2021 – Feb 2025 · Bengaluru, India</p>
-      <ul>
-        <li>Led backend and CLI development of a cloud static code analyzer and integrations that improved developer onboarding and code quality.</li>
-        <li>Built OAuth and Git provider integrations and optimized CI infrastructure (Docker, Kubernetes, GCP) to reduce costs and deployment times.</li>
-      </ul>
-    </div>
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-content">
+        <ul class="skills-list">
+          <li><span class="skill-category">Programming Languages:</span> Python, TypeScript, JavaScript, Java</li>
+          <li><span class="skill-category">Libraries/Frameworks:</span> Express, Flask, FastAPI, Django, Spring, Node.js</li>
+          <li><span class="skill-category">Databases:</span> MongoDB, PostgreSQL, Redis, SQLite</li>
+          <li><span class="skill-category">Cloud/DevOps:</span> Kubernetes, Docker, Git, JIRA, AWS, GCP</li>
+          <li><span class="skill-category">Dev Testing:</span> JUnit, Mockito, Jest, Mocha, PyTest, Integration Testing, Exploratory Testing </li>
+          <li><span class="skill-category">AI:</span> RAG, Model Context Protocol, Prompt Engineering, AI Agents, OpenAI API, LangChain, LangGraph</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="experience-item">
-      <h3>Wells Fargo — Software Engineer (various levels)</h3>
-      <p class="muted">Jan 2017 – Sept 2021 · Bengaluru, India</p>
-      <ul>
-        <li>Led small teams to deliver rewards programs and resilient backend services using Java and Spring; migrated monoliths to microservices.</li>
-        <li>Implemented integrations with external vendors and modernized front-end stacks to improve customer experience.</li>
-      </ul>
-    </div>
-</div>
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-content">
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>Senior Software Engineer</h3>
+              <p class="company">Copado – Bengaluru, India</p>
+              <p class="duration">Sept 2021 – Feb 2025</p>
+            </div>
+            <div class="company-logo">
+              <img src="static/copado_logo.png" alt="Copado" />
+            </div>
+          </div>
+          <ul class="experience-details">
+            <li>Backend and CLI development of a cloud-based static code analyzer using TypeScript, Node.js, Python, and Docker, empowering developers to detect issues earlier and improve code quality across Salesforce projects</li>
+            <li>Built OAuth and Git provider integrations (Azure DevOps, GitLab, GitHub) using Java, Spring Boot, and Redis enabling seamless repo and PR management; reduced onboarding effort for new projects by >80%, enhancing developer experience</li>
+            <li>Designed libraries and backend services using Java, Python, JavaScript, Docker, Redis, and PostgreSQL accelerating Copado integration into Salesforce ecosystems, reducing pipeline setup time to a few hours</li>
+            <li>Refactored and enhanced the Copado CLI using TypeScript, improving performance and usability</li>
+            <li>Streamlined deployment of 10+ Docker images to Google Kubernetes Engine (GKE) by building efficient, reusable CI/CD pipelines, cutting deployment time by 60%</li>
+            <li>Resolved high-severity production issues and eliminated legacy technical debt reported via Snyk and SonarQube, directly improving platform stability and mitigating major security vulnerabilities</li>
+            <li>Solved authentication scalability challenges by implementing JWT bearer flows using Java, PostgreSQL and Redis, removing manual OAuth setup</li>
+          </ul>
+        </div>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>My Cool App:</strong> A web app that helps users learn Python.</li>
-        <li><strong>Weather Dashboard:</strong> A fun JS project that shows real-time weather.</li>
-      </ul>
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>Software Engineering Senior Analyst</h3>
+              <p class="company">Wells Fargo – Bengaluru, India</p>
+              <p class="duration">Mar 2020 – Sept 2021</p>
+            </div>
+            <div class="company-logo">
+              <img src="static/wf_logo.png" alt="Wells Fargo" />
+            </div>
+          </div>
+          <ul class="experience-details">
+            <li>Mentored a team of 4 engineers to design and launch rewards programs for new credit card products using Java, Spring MVC contributing to multimillion-dollar annual revenue growth</li>
+            <li>Implemented traffic management and circuit-breaking using Resilience4j, improving fault tolerance and boosting reliability of critical banking services across on-prem servers</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>Associate Software Engineer 2</h3>
+              <p class="company">Wells Fargo – Bengaluru, India</p>
+              <p class="duration">Oct 2018 – Feb 2020</p>
+            </div>
+            <div class="company-logo">
+              <img src="static/wf_logo.png" alt="Wells Fargo" />
+            </div>
+          </div>
+          <ul class="experience-details">
+            <li>Designed and implemented RESTful services using Java and Spring MVC, that integrated with third-party vendors to fetch real-time offers, serving millions of credit card customers with personalized rewards and promotions</li>
+            <li>Revamped the user interface for online banking modules by migrating from a legacy JSP and jQuery stack to React, improving maintainability and performance</li>
+            <li>Mentored incoming interns, providing guidance and onboarding support</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="company-info">
+              <h3>Associate Software Engineer 1</h3>
+              <p class="company">Wells Fargo – Bengaluru, India</p>
+              <p class="duration">Jul 2017 – Sept 2018</p>
+            </div>
+            <div class="company-logo">
+              <img src="static/wf_logo.png" alt="Wells Fargo" />
+            </div>
+          </div>
+          <ul class="experience-details">
+            <li>Migrated core monolithic online banking features to modular services using Java and Spring Boot, modernizing the architecture, improving scalability and maintainability</li>
+            <li>Improved code quality of core modules by achieving over 90% code coverage using JUnit and Mockito</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="section-content">
+        <div class="education-item">
+          <h3>MS in Computer Science</h3>
+          <p class="institution">Seattle University</p>
+          <p class="details">GPA: 4.0/4.0 • Expected Dec 2026</p>
+          <p class="coursework">Selected Coursework: Software Architecture & Design, Artificial Intelligence, Distributed Systems</p>
+        </div>
+        <div class="education-item">
+          <h3>BE in Information Science and Engineering</h3>
+          <p class="institution">BMS College of Engineering</p>
+          <p class="details">GPA: 8.96/10 • 2017</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-content">
+        <p>Check back soon for featured projects and contributions!</p>
+      </div>
     </section>
   </main>
-
+  
   <footer class="site-footer">
-    <div class="container">
-      <p>Connect with me on <a href="https://github.com/BrundaSreedhar" target="_blank" rel="noopener">GitHub</a>.</p>
+    <div class="footer-content">
+      <p>&copy; 2025 Brunda Sreedhara Murthy. All rights reserved.</p>
     </div>
   </footer>
 </body>
