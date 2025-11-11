@@ -30,3 +30,50 @@ footer {
   background: #eee;
   font-size: 0.9em;
 }
+
+/* Resume specific styles */
+.muted {
+  color: #555b6e;
+  font-size: 0.95rem;
+  margin-top: -0.25rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.skill {
+  background: #e6f0ff;
+  color: #063970;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.experience-item {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  section {
+    max-width: 900px;
+  }
+  .skills-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .skill-group {
+    flex: 1 1 45%;
+  }
+}
