@@ -1044,20 +1044,37 @@ button { font: inherit; }
 .dish-link:hover { color: var(--accent); }
 .dish-link .note { font-weight: 400; color: var(--ink-soft); }
 
-.menu-next {
+/* Side dishes: the things that are not code but are still mine */
+
+.sides {
   grid-column: 1 / -1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px 20px;
-  border: 2px dashed var(--line-strong);
-  border-radius: 20px;
-  padding: 18px clamp(20px, 3vw, 28px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.menu-next p { margin: 0; }
-.menu-next strong { font-family: var(--font-display); font-weight: 400; font-size: 22px; margin-right: 8px; }
+@media (max-width: 860px) { .sides { grid-template-columns: minmax(0, 1fr); } }
+
+.side-dish {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px dashed var(--line-strong);
+  border-radius: 20px;
+  padding: 22px clamp(20px, 3vw, 28px);
+  background: var(--surface-2);
+}
+
+.side-dish h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.side-dish p { margin: 0; color: var(--ink-soft); }
 
 /* ---------- Achievements ---------- */
 
