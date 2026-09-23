@@ -131,7 +131,8 @@
         <p class="eyebrow">Senior software engineer<span class="sep">/</span>Backend &amp; AI<span class="sep">/</span>Seattle</p>
         <span class="hi">hi, I&#8217;m</span>
         <h1 id="intro-title"><span class="h1-first">Brunda</span><span class="h1-last">Sreedhara Murthy</span></h1>
-        <p class="lede">I&#8217;ve spent 7+ years building backends other developers lean on: Git integrations, CLIs and static analysis at Copado, and banking services for millions of customers at Wells Fargo. I&#8217;m finishing an MS in Computer Science at Seattle University, and the AI tools I build all answer the same question: can you prove this thing is right? Usually written from a café table somewhere in Seattle.</p>
+        <p class="lede">I&#8217;ve spent 8+ years building backends other developers lean on: Git integrations, CLIs and static analysis at Copado, and banking services for millions of customers at Wells Fargo. I&#8217;m finishing an MS in Computer Science at Seattle University, and the AI tools I build all answer the same question: can you prove this thing is right? Usually written from a café table somewhere in Seattle.</p>
+        <p class="open-to"><span class="open-dot" aria-hidden="true"></span>Looking for backend, AI and platform engineering roles</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">See what I&#8217;ve built</a>
           <a class="btn btn-ghost" href="#contact">Say hi</a>
@@ -139,7 +140,7 @@
         <dl class="facts">
           <div><dt>Based in</dt><dd>Seattle, WA</dd></div>
           <div><dt>Now</dt><dd>MS CS, 4.0 GPA</dd></div>
-          <div><dt>Built &amp; ran</dt><dd>Scentora, 2018–2022</dd></div>
+          <div><dt>Cofounded</dt><dd>Scentora, 2018–2022</dd></div>
         </dl>
       </div>
 
@@ -180,7 +181,6 @@
       <header class="section-head">
         <span class="tape-label" style="--tape: var(--tape-3)">Experience</span>
         <h2 id="experience-title">The trail so far</h2>
-        <p class="section-sub">Seven-plus years across fintech and developer tools, from Bengaluru to Seattle. Newest first.</p>
       </header>
 
       <ol class="trail">
@@ -212,7 +212,7 @@
             <div class="stop-head">
               <span class="logo-chip is-mono" aria-hidden="true">Hi</span>
               <div>
-                <h3>Software Engineering Intern</h3>
+                <h3>AI Engineering Intern</h3>
                 <p class="org">Hirello.ai · AI agents for hiring</p>
               </div>
             </div>
@@ -241,6 +241,25 @@
               <li>Designed libraries and services (Java, Python, PostgreSQL, Redis) that brought Salesforce pipeline setup down to a few hours.</li>
               <li>Replaced manual OAuth setup with JWT bearer flows, and cleared high-severity Snyk and SonarQube findings to harden the platform.</li>
             </ul>
+          </div>
+        </li>
+
+        <li class="stop" style="--blaze: var(--turmeric)">
+          <div class="stop-when">
+            <span class="chip chip-gold">Cofounder</span>
+            <time>2018 – 2022</time>
+            <span>Scentora</span>
+          </div>
+          <div class="stop-card">
+            <div class="stop-head">
+              <span class="logo-chip is-mono" aria-hidden="true">Sc</span>
+              <div>
+                <h3>Cofounder</h3>
+                <p class="org">Scentora</p>
+              </div>
+            </div>
+            <p>Cofounded it in 2018 and ran it for four years alongside a full-time engineering job: 189 posts and an audience of 2,000 built from nothing.</p>
+            <ul class="tags"><li><a href="https://instagram.com/scentora" target="_blank" rel="noopener">@scentora on Instagram</a></li></ul>
           </div>
         </li>
 
@@ -335,18 +354,18 @@
       <header class="section-head">
         <span class="tape-label" style="--tape: var(--tape-1)">Projects</span>
         <h2 id="projects-title">House specials</h2>
-        <p class="section-sub">Two side projects chasing one question: how do you build an AI tool people can actually trust?</p>
+        <p class="section-sub">Two tools I built end to end. One turns a paper you don&#8217;t have time to read into an episode you can listen to on the way to work. The other reads your code and keeps its mouth shut unless something is actually wrong.</p>
       </header>
 
       <div class="menu">
         <article class="dish">
-          <div class="dish-top"><span class="chip">AI pipeline</span><span class="chip chip-teal">Evals</span></div>
+          <div class="dish-top"><span class="chip">AI pipeline</span><span class="chip chip-teal">Audio</span></div>
           <div class="dish-name"><h3>Paper → Podcast</h3><span class="leader" aria-hidden="true"></span><span class="price">TypeScript</span></div>
-          <p>Turns an academic paper into a two-host podcast episode that says only what the paper says, and proves it. A judge model scores every script claim by claim, and whisper.cpp transcribes the finished audio to check it still matches.</p>
+          <p>Drop in a PDF, get back two hosts talking it through for as long as you asked for. References and appendices are stripped, figures are pulled out, and the whole thing can run on your own machine with local models, local speech and local transcription. The hard part isn&#8217;t the audio: a model explaining a paper will invent things fluently, so every claim in the script is scored against the source, and the finished audio is transcribed back to check it still matches.</p>
           <dl class="dish-stats">
             <div><dt>faithfulness, claim by claim</dt><dd>93%</dd></div>
-            <div><dt>planted errors caught</dt><dd>11/11</dd></div>
-            <div><dt>unit tests, ~3s to run</dt><dd>608</dd></div>
+            <div><dt>routes: Claude, OpenAI, open models</dt><dd>3</dd></div>
+            <div><dt>accounts needed to run it yourself</dt><dd>0</dd></div>
           </dl>
           <ul class="tags"><li>Claude · OpenAI · open models</li><li>Zod</li><li>Piper TTS</li><li>whisper.cpp</li><li>OpenTelemetry</li><li>Next.js</li></ul>
           <p class="pairs"><span>Pairs well with</span>a long commute and a cortado</p>
@@ -356,11 +375,11 @@
         <article class="dish">
           <div class="dish-top"><span class="chip">Code review</span><span class="chip chip-gold">Multi-agent</span></div>
           <div class="dish-name"><h3>Loupe</h3><span class="leader" aria-hidden="true"></span><span class="price">Python</span></div>
-          <p>A code reviewer that stays quiet unless it has something to say. Four specialists read a diff in parallel, then a separate pass re-checks every finding against the full source and is told to reject. Each surviving finding quotes the line it rests on, so a claim about code nobody wrote never reaches you.</p>
+          <p>Reviews a local diff or a GitHub pull request from your terminal. Four specialists read the change at once, each hunting a different class of defect, and a separate gate re-checks what they filed against the full source with instructions to reject. What survives arrives with a failure scenario, the line it rests on and often a one-click patch, next to a diagram of how the change hangs together. Review the same branch twice and it tells you what you fixed instead of repeating itself.</p>
           <dl class="dish-stats">
-            <div><dt>specialists, in parallel</dt><dd>4</dd></div>
-            <div><dt>unit tests</dt><dd>285</dd></div>
+            <div><dt>specialists reading in parallel</dt><dd>4</dd></div>
             <div><dt>model calls per review</dt><dd>6–12</dd></div>
+            <div><dt>findings quoting code that isn&#8217;t there</dt><dd>0</dd></div>
           </dl>
           <ul class="tags"><li>LangGraph</li><li>Claude · Gemini · local models</li><li>Pydantic</li><li>Typer</li><li>Rich</li><li>pytest</li></ul>
           <p class="pairs"><span>Pairs well with</span>the last coffee before you open the pull request</p>
@@ -368,12 +387,6 @@
         </article>
 
         <div class="sides">
-          <article class="side-dish">
-            <span class="chip chip-gold">2018 – 2022</span>
-            <h3>Scentora</h3>
-            <p>Mine from 2018 to 2022: four years, 189 posts and 2,000 people who followed along. The archive is still up.</p>
-            <a class="dish-link" href="https://instagram.com/scentora" target="_blank" rel="noopener">@scentora on Instagram</a>
-          </article>
           <article class="side-dish">
             <span class="chip chip-teal">With my sister</span>
             <h3>The Vegan Sistahs</h3>
@@ -419,9 +432,9 @@
           <span class="medal m-teal" style="--fs:16px" aria-hidden="true">11/11</span>
           <span class="badge-text"><strong>Lie detector</strong><span class="desc">Built an eval harness that caught 11 of 11 planted text errors and 5 of 5 planted audio ones.</span><span class="from">Paper → Podcast</span></span>
         </button></li>
-        <li><button class="badge" type="button" data-title="Green wall">
-          <span class="medal m-gold" style="--fs:19px" aria-hidden="true">608</span>
-          <span class="badge-text"><strong>Green wall</strong><span class="desc">608 unit tests with no network calls, running in about three seconds.</span><span class="from">Paper → Podcast</span></span>
+        <li><button class="badge" type="button" data-title="No account required">
+          <span class="medal m-gold" style="--fs:26px" aria-hidden="true">0</span>
+          <span class="badge-text"><strong>No account required</strong><span class="desc">Built the whole pipeline to run on local models, local speech and local transcription, so anyone can run it for free.</span><span class="from">Paper → Podcast</span></span>
         </button></li>
         <li><button class="badge" type="button" data-title="Covered">
           <span class="medal" style="--fs:19px" aria-hidden="true">90%</span>
@@ -482,20 +495,6 @@
         </li>
       </ul>
 
-      <div class="weekend">
-        <div class="weekend-stub" aria-hidden="true">Admit one · Saturday</div>
-        <div class="weekend-body">
-          <div class="weekend-head">
-            <h3>A perfectly normal Saturday</h3>
-            <button class="btn btn-small btn-primary" id="replan" type="button">Plan another</button>
-          </div>
-          <ol class="itinerary" id="itinerary" aria-live="polite">
-            <li><time>07:00</time><span class="plan-text">Trailhead at sunrise. Switchbacks before small talk.</span></li>
-            <li><time>12:30</time><span class="plan-text">Coffee at the bottom of the hill, judged entirely on the foam.</span></li>
-            <li><time>18:00</time><span class="plan-text">Belly dance practice until the coin scarf gets a noise complaint.</span></li>
-          </ol>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -505,14 +504,14 @@
       <header class="section-head">
         <span class="tape-label" style="--tape: var(--tape-1)">Contact</span>
         <h2 id="contact-title">Send a postcard</h2>
-        <p class="section-sub">Recruiters, collaborators and café recommendations are all welcome.</p>
+        <p class="section-sub">I&#8217;m looking for backend, AI and platform engineering roles. Recruiters and collaborators welcome, café recommendations too.</p>
       </header>
 
       <div class="postcard-edge">
         <div class="postcard">
           <div class="pc-left">
             <p class="pc-greeting">Wish you were here!</p>
-            <p>Hiring for backend or AI engineering? Building something that has to tell the truth? Know a café in Seattle I have to try?</p>
+            <p>Hiring for a backend, AI or platform role? Building something that has to tell the truth? Know a café in Seattle I have to try?</p>
             <p>My inbox is open for all three.</p>
             <p class="pc-sign">xo, Brunda</p>
           </div>

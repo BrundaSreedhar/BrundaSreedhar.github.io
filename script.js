@@ -6,29 +6,7 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const moving = () => !reduceMotion.matches;
 
-  /* ---------- Weekend plans: edit freely ---------- */
-  const plans = {
-    morning: [
-      'Trailhead at sunrise. Switchbacks before small talk.',
-      'Early train to a town I’ve only ever seen on a map.',
-      'A slow breakfast at a café I haven’t tried yet.',
-      'A loop trail with a lake at the top and snacks in every pocket.',
-    ],
-    midday: [
-      'Coffee at the bottom of the hill, judged entirely on the foam.',
-      'A market run for whatever looks unfamiliar.',
-      'Hunting down the café a stranger recommended.',
-      'Lunch I will absolutely try to recreate at home.',
-    ],
-    evening: [
-      'Belly dance practice until the coin scarf gets a noise complaint.',
-      'Cooking last trip’s favorite dish, with notes for next time.',
-      'Planning the next trip across nine open tabs.',
-      'A new recipe, a drum-heavy playlist, and flour everywhere.',
-    ],
-  };
-
-  /* ---------- Theme toggle (Day roast / Night roast) ---------- */
+  /* ---------- Theme toggle ---------- */
   const root = document.documentElement;
   const themeBtn = $('#theme-toggle');
   const themeLabel = $('#theme-label');
@@ -221,25 +199,6 @@
       void badge.offsetWidth;
       badge.classList.add('is-popped');
     });
-  });
-
-  /* ---------- Weekend planner ---------- */
-  const itinerary = $('#itinerary');
-  const slots = ['morning', 'midday', 'evening'];
-  let current = [0, 0, 0];
-
-  $('#replan')?.addEventListener('click', () => {
-    if (!itinerary) return;
-    current = current.map((idx, k) => {
-      const options = plans[slots[k]];
-      let next = idx;
-      while (next === idx && options.length > 1) next = Math.floor(Math.random() * options.length);
-      return next;
-    });
-    $$('.plan-text', itinerary).forEach((el, k) => { el.textContent = plans[slots[k]][current[k]]; });
-    itinerary.classList.remove('is-new');
-    void itinerary.offsetWidth;
-    itinerary.classList.add('is-new');
   });
 
   /* ---------- Copy email ---------- */
