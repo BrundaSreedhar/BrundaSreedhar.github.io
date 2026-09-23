@@ -37,9 +37,9 @@
 
   function syncThemeLabel() {
     if (!themeBtn || !themeLabel) return;
-    const next = effectiveTheme() === 'dark' ? 'Day roast' : 'Night roast';
+    const next = effectiveTheme() === 'dark' ? 'Day' : 'Night';
     themeLabel.textContent = next;
-    themeBtn.setAttribute('aria-label', `Switch to ${next === 'Day roast' ? 'light' : 'dark'} theme`);
+    themeBtn.setAttribute('aria-label', `Switch to ${next === 'Day' ? 'light' : 'dark'} theme`);
   }
 
   themeBtn?.addEventListener('click', () => {
