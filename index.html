@@ -1,188 +1,545 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brunda Sreedhar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brunda Sreedhara Murthy</title>
+<meta name="description" content="Brunda Sreedhara Murthy: senior software engineer (backend and AI) in Seattle, and a committed hobbymaxxer.">
+<meta name="theme-color" content="#F2EDFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#150F24" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brunda Sreedhara Murthy">
+<meta property="og:description" content="Senior software engineer, backend and AI. Also: cafés, trails, travel, belly dancing and cooking.">
+<meta property="og:url" content="https://brundasreedhar.github.io/">
+<meta property="og:image" content="https://brundasreedhar.github.io/static/brunda_photo.jpeg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23F2C14E' stroke='%23B8861A' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='7.5' fill='none' stroke='%23B8861A' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&family=Shrikhand&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('bs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <div class="site-brand">
-        <h1>Brunda Sreedhara Murthy</h1>
-        <p class="role">Senior Software Engineer • Backend & AI</p>
-      </div>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="section">
-      <h2 class="section-title">About</h2>
-      <div class="section-content">
-        <div class="about-wrapper">
-          <div class="about-text">
-            <p>Hello! I'm Brunda Sreedhara Murthy, a Senior Software Engineer based out of Seattle, Washington, with extensive experience in backend development, cloud infrastructure, and AI engineering. I specialize in building scalable systems, optimizing performance, and leading technical initiatives that drive business impact. I enjoy working on customer-facing products with experiences that make their lives easy.</p>
-            <div class="contact-info">
-              <div class="contact-links">
-                <a href="mailto:brundasreedhar@gmail.com" class="contact-link" aria-label="Email">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                  <span>Email</span>
-                </a>
-                <a href="https://linkedin.com/in/brundasreedhar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                  <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/brundaSreedhar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                  <span>GitHub</span>
-                </a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Sticker artwork, drawn once and reused in the hero and the hobby polaroids -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="s-coffee" viewBox="0 0 100 124">
+      <g fill="none" stroke="#8A7DB0" stroke-width="4" stroke-linecap="round">
+        <path d="M36 23c-6-6 6-10 0-18"/>
+        <path d="M50 23c-6-6 6-10 0-18"/>
+        <path d="M64 23c-6-6 6-10 0-18"/>
+      </g>
+      <rect x="20" y="28" width="60" height="9" rx="4" fill="#22163A"/>
+      <rect x="14" y="35" width="72" height="11" rx="5" fill="#22163A"/>
+      <path d="M18 46h64l-9 74H27z" fill="#D6336C"/>
+      <path d="M20.2 64h59.6l-3.15 26H23.35z" fill="#F2AE1C"/>
+      <path d="M50 86C38 78 38 70 44 69c3-.5 5 1.5 6 3.5 1-2 3-4 6-3.5 6 1 6 9-6 17z" fill="#22163A"/>
+    </symbol>
+
+    <symbol id="s-mountain" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="56" fill="#0F7A66"/>
+      <circle cx="84" cy="36" r="11" fill="#F2AE1C"/>
+      <path d="M12.7 90 42 50l18 20 20-26 27.3 46A56 56 0 0 1 12.7 90z" fill="#0A5446"/>
+      <path d="M42 50l-7.9 10.8 4.4-2.2 4.5 3.8 5.5-5.2z" fill="#FFFFFF"/>
+      <path d="M80 44l-9.2 12 4.7-2.5 5 4 4.5-5.1z" fill="#FFFFFF"/>
+      <path d="M20.8 100C40 92 52 100 66 96s24-2 33.2 4A56 56 0 0 1 20.8 100z" fill="#1FA586"/>
+      <path d="M60 114c2-6-6-10-2-15" fill="none" stroke="#F2AE1C" stroke-width="3" stroke-dasharray="3 4" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="s-tag" viewBox="0 0 150 92">
+      <path d="M34 8h104a8 8 0 0 1 8 8v60a8 8 0 0 1-8 8H34L12 62V30z" fill="#4F6BF0"/>
+      <circle cx="26" cy="46" r="6" fill="#FFFFFF"/>
+      <path d="M26 46C10 46 4 30 10 12" fill="none" stroke="#22163A" stroke-width="3" stroke-linecap="round"/>
+      <text x="90" y="32" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.6" fill="#DCE2FF">DESTINATION</text>
+      <text x="90" y="55" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">ANYWHERE</text>
+      <text x="90" y="71" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="#DCE2FF">carry-on only</text>
+    </symbol>
+
+    <symbol id="s-scarf" viewBox="0 0 140 104">
+      <path d="M8 12h124L70 86z" fill="#D6336C"/>
+      <path d="M27 21h86L70 71z" fill="none" stroke="#F2AE1C" stroke-width="2.4" stroke-dasharray="0.1 6" stroke-linecap="round"/>
+      <rect x="4" y="6" width="132" height="12" rx="6" fill="#8E2458"/>
+      <g fill="#F2C14E" stroke="#B8861A" stroke-width="1.4">
+        <circle cx="16.4" cy="32.8" r="5.5"/>
+        <circle cx="25.7" cy="43.9" r="5.5"/>
+        <circle cx="35" cy="55" r="5.5"/>
+        <circle cx="44.3" cy="66.1" r="5.5"/>
+        <circle cx="53.6" cy="77.2" r="5.5"/>
+        <circle cx="123.6" cy="32.8" r="5.5"/>
+        <circle cx="114.3" cy="43.9" r="5.5"/>
+        <circle cx="105" cy="55" r="5.5"/>
+        <circle cx="95.7" cy="66.1" r="5.5"/>
+        <circle cx="86.4" cy="77.2" r="5.5"/>
+        <circle cx="70" cy="93" r="6.5"/>
+      </g>
+    </symbol>
+
+    <symbol id="s-pot" viewBox="0 0 132 112">
+      <g fill="none" stroke="#8A7DB0" stroke-width="4" stroke-linecap="round">
+        <path d="M46 36c-6-6 6-10 0-18"/>
+        <path d="M62 36c-6-6 6-10 0-18"/>
+      </g>
+      <path d="M84 46l18-34" stroke="#9A6A3A" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="104" cy="11" rx="6" ry="8.5" transform="rotate(28 104 11)" fill="#9A6A3A"/>
+      <rect x="2" y="55" width="18" height="9" rx="4.5" fill="#22163A"/>
+      <rect x="112" y="55" width="18" height="9" rx="4.5" fill="#22163A"/>
+      <path d="M18 48h96v36a22 22 0 0 1-22 22H40a22 22 0 0 1-22-22z" fill="#F2AE1C"/>
+      <rect x="12" y="42" width="108" height="10" rx="5" fill="#22163A"/>
+      <text x="66" y="86" text-anchor="middle" font-family="Caveat, cursive" font-weight="700" font-size="21" fill="#22163A">chef&#8217;s kiss</text>
+    </symbol>
+
+    <symbol id="s-terminal" viewBox="0 0 164 100">
+      <rect width="164" height="100" rx="12" fill="#22163A"/>
+      <circle cx="16" cy="15" r="4.5" fill="#FF6B9D"/>
+      <circle cx="30" cy="15" r="4.5" fill="#F2AE1C"/>
+      <circle cx="44" cy="15" r="4.5" fill="#4CD1B4"/>
+      <g font-family="DM Mono, monospace" font-size="10.5">
+        <text x="14" y="44" fill="#CFC5EC">$ npm run eval</text>
+        <text x="14" y="64" fill="#4CD1B4">faithful ........ 93%</text>
+        <text x="14" y="84" fill="#F2AE1C">hallucinations: caught</text>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="#intro">brunda<span>.</span></a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="roast" id="theme-toggle" type="button">
+      <span class="roast-bean" aria-hidden="true"></span>
+      <span id="theme-label">Night roast</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= INTRO ================= -->
+  <section id="intro" class="hero" aria-labelledby="intro-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Senior software engineer<span class="sep">/</span>Backend &amp; AI<span class="sep">/</span>Seattle</p>
+        <span class="hi">hi, I&#8217;m</span>
+        <h1 id="intro-title"><span class="h1-first">Brunda</span><span class="h1-last">Sreedhara Murthy</span></h1>
+        <p class="lede">I&#8217;ve spent 7+ years building backends other developers lean on: Git integrations and CLIs at Copado, and banking services for millions of customers at Wells Fargo. Now I&#8217;m doing an MS in Computer Science at Seattle University and building AI tools that have to earn your trust. Off the clock, I&#8217;m hiking toward a café, cooking something I ate on a trip, or practicing a shimmy in the kitchen.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See what I&#8217;ve built</a>
+          <a class="btn btn-ghost" href="#contact">Say hi</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Seattle, WA</dd></div>
+          <div><dt>Now</dt><dd>MS CS, 4.0 GPA</dd></div>
+          <div><dt>Hobbies</dt><dd>5, and counting</dd></div>
+        </dl>
+      </div>
+
+      <div class="board-wrap">
+        <div class="board" id="board">
+          <figure class="sticker photo" style="--x:50%;--y:46%;--r:-3deg;--w:200;--i:0">
+            <span class="tape" aria-hidden="true"></span>
+            <img src="static/brunda_photo.jpeg" alt="Brunda smiling at the camera" width="800" height="800" draggable="false">
+            <figcaption>me, pre-café</figcaption>
+          </figure>
+          <div class="sticker wordmark" style="--x:27%;--y:8%;--r:-7deg;--w:0;--i:1" aria-hidden="true">hobbymaxxing</div>
+          <div class="sticker" style="--x:80%;--y:11%;--r:9deg;--w:124;--i:2" aria-hidden="true"><svg viewBox="0 0 150 92"><use href="#s-tag"/></svg></div>
+          <div class="sticker" style="--x:11%;--y:40%;--r:-10deg;--w:84;--i:3" aria-hidden="true"><svg viewBox="0 0 100 124"><use href="#s-coffee"/></svg></div>
+          <div class="sticker" style="--x:85%;--y:43%;--r:5deg;--w:150;--i:4" aria-hidden="true"><svg viewBox="0 0 164 100"><use href="#s-terminal"/></svg></div>
+          <div class="sticker" style="--x:15%;--y:76%;--r:-6deg;--w:112;--i:5" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#s-mountain"/></svg></div>
+          <div class="sticker" style="--x:48%;--y:88%;--r:5deg;--w:124;--i:6" aria-hidden="true"><svg viewBox="0 0 140 104"><use href="#s-scarf"/></svg></div>
+          <div class="sticker" style="--x:81%;--y:77%;--r:7deg;--w:108;--i:7" aria-hidden="true"><svg viewBox="0 0 132 112"><use href="#s-pot"/></svg></div>
+        </div>
+        <div class="board-caption">
+          <p class="hand-note">psst: the stickers are draggable</p>
+          <div class="board-buttons">
+            <button class="btn btn-small btn-ghost" id="shuffle" type="button">Shuffle</button>
+            <button class="btn btn-small btn-primary" id="shimmy" type="button" aria-label="Shimmy: jingle the coin fringe">Shimmy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fringe" aria-hidden="true">
+      <div class="fringe-band"></div>
+      <div class="coins" id="coins"></div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="tape-label" style="--tape: var(--tape-3)">Experience</span>
+        <h2 id="experience-title">The trail so far</h2>
+        <p class="section-sub">Seven-plus years across fintech and developer tools, from Bengaluru to Seattle. Newest first.</p>
+      </header>
+
+      <ol class="trail">
+        <li class="stop" style="--blaze: var(--teal)">
+          <div class="stop-when">
+            <span class="chip chip-teal">School</span>
+            <time>Grad Dec 2026</time>
+            <span>Seattle, WA</span>
+          </div>
+          <div class="stop-card">
+            <div class="stop-head">
+              <span class="logo-chip is-mono" aria-hidden="true">SU</span>
+              <div>
+                <h3>MS in Computer Science</h3>
+                <p class="org">Seattle University · GPA 4.0 / 4.0</p>
               </div>
             </div>
+            <p>Coursework in Software Architecture &amp; Design, Artificial Intelligence and Distributed Systems. The side projects below are where I put it to work.</p>
           </div>
-          <div class="about-photo">
-            <img src="static/brunda_photo.jpeg" alt="Brunda Sreedhara Murthy" />
+        </li>
+
+        <li class="stop">
+          <div class="stop-when">
+            <span class="chip">Work</span>
+            <time>Sept 2021 – Feb 2025</time>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="stop-card">
+            <div class="stop-head">
+              <span class="logo-chip is-wide"><img src="static/copado_logo.png" alt="Copado" width="412" height="122" loading="lazy"></span>
+              <div>
+                <h3>Senior Software Engineer</h3>
+                <p class="org">Copado</p>
+              </div>
+            </div>
+            <ul>
+              <li>Built the backend and CLI for a cloud-based static code analyzer (TypeScript, Node.js, Python, Docker) that helps developers catch issues earlier across Salesforce projects.</li>
+              <li>Built OAuth and Git provider integrations for Azure DevOps, GitLab and GitHub (Java, Spring Boot, Redis), cutting onboarding effort for new projects by more than 80%.</li>
+              <li>Built reusable CI/CD pipelines that ship 10+ Docker images to Google Kubernetes Engine, cutting deployment time by 60%.</li>
+              <li>Designed libraries and services (Java, Python, PostgreSQL, Redis) that brought Salesforce pipeline setup down to a few hours.</li>
+              <li>Replaced manual OAuth setup with JWT bearer flows, and cleared high-severity Snyk and SonarQube findings to harden the platform.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="stop">
+          <div class="stop-when">
+            <span class="chip">Work</span>
+            <time>Jul 2017 – Sept 2021</time>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="stop-card">
+            <div class="stop-head">
+              <span class="logo-chip"><img src="static/wf_logo.png" alt="Wells Fargo" width="225" height="225" loading="lazy"></span>
+              <div>
+                <h3>Wells Fargo</h3>
+                <p class="org">Three roles, two promotions</p>
+              </div>
+            </div>
+            <ol class="levels" reversed>
+              <li>
+                <div class="level-top"><span class="lvl">Level 3</span><h4>Software Engineering Senior Analyst</h4><time>Mar 2020 – Sept 2021</time></div>
+                <p>Mentored a team of 4 engineers to launch rewards programs for new credit cards (Java, Spring MVC), contributing to multimillion-dollar annual revenue growth. Added traffic management and circuit breaking with Resilience4j to keep critical banking services up.</p>
+              </li>
+              <li>
+                <div class="level-top"><span class="lvl">Level 2</span><h4>Associate Software Engineer 2</h4><time>Oct 2018 – Feb 2020</time></div>
+                <p>Built REST services that pulled real-time offers from third-party vendors for millions of credit card customers. Moved online banking modules from JSP and jQuery to React, and mentored incoming interns.</p>
+              </li>
+              <li>
+                <div class="level-top"><span class="lvl">Level 1</span><h4>Associate Software Engineer 1</h4><time>Jul 2017 – Sept 2018</time></div>
+                <p>Broke monolithic online banking features into modular Spring Boot services, and pushed core-module test coverage past 90% with JUnit and Mockito.</p>
+              </li>
+            </ol>
+          </div>
+        </li>
+
+        <li class="stop" style="--blaze: var(--teal)">
+          <div class="stop-when">
+            <span class="chip chip-teal">School</span>
+            <time>Graduated 2017</time>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="stop-card">
+            <div class="stop-head">
+              <span class="logo-chip is-mono" aria-hidden="true">BMS</span>
+              <div>
+                <h3>BE in Information Science and Engineering</h3>
+                <p class="org">BMS College of Engineering · GPA 8.96 / 10</p>
+              </div>
+            </div>
+            <p>The trailhead.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="pack">
+        <div class="pack-head">
+          <h3>What&#8217;s in my pack</h3>
+          <p>packed light, somehow</p>
+        </div>
+        <div class="pack-grid">
+          <div class="pack-group">
+            <h4>Languages</h4>
+            <ul class="tags"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Java</li></ul>
+          </div>
+          <div class="pack-group">
+            <h4>Frameworks</h4>
+            <ul class="tags"><li>FastAPI</li><li>Django</li><li>Flask</li><li>Spring</li><li>Node.js</li><li>Express</li></ul>
+          </div>
+          <div class="pack-group">
+            <h4>AI</h4>
+            <ul class="tags"><li>AI agents</li><li>RAG</li><li>Model Context Protocol</li><li>LangChain</li><li>LangGraph</li><li>Claude &amp; OpenAI APIs</li><li>Prompt engineering</li></ul>
+          </div>
+          <div class="pack-group">
+            <h4>Data</h4>
+            <ul class="tags"><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>SQLite</li></ul>
+          </div>
+          <div class="pack-group">
+            <h4>Cloud &amp; DevOps</h4>
+            <ul class="tags"><li>Kubernetes</li><li>Docker</li><li>AWS</li><li>GCP</li><li>Git</li><li>JIRA</li></ul>
+          </div>
+          <div class="pack-group">
+            <h4>Testing</h4>
+            <ul class="tags"><li>JUnit</li><li>Mockito</li><li>PyTest</li><li>Jest</li><li>Mocha</li><li>Vitest</li></ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2 class="section-title">Skills</h2>
-      <div class="section-content">
-        <ul class="skills-list">
-          <li><span class="skill-category">Programming Languages:</span> Python, TypeScript, JavaScript, Java</li>
-          <li><span class="skill-category">Libraries/Frameworks:</span> Express, Flask, FastAPI, Django, Spring, Node.js</li>
-          <li><span class="skill-category">Databases:</span> MongoDB, PostgreSQL, Redis, SQLite</li>
-          <li><span class="skill-category">Cloud/DevOps:</span> Kubernetes, Docker, Git, JIRA, AWS, GCP</li>
-          <li><span class="skill-category">Dev Testing:</span> JUnit, Mockito, Jest, Mocha, PyTest, Integration Testing, Exploratory Testing </li>
-          <li><span class="skill-category">AI:</span> RAG, Model Context Protocol, Prompt Engineering, AI Agents, OpenAI API, LangChain, LangGraph</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <h2 class="section-title">Experience</h2>
-      <div class="section-content">
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="company-info">
-              <h3>Senior Software Engineer</h3>
-              <p class="company">Copado – Bengaluru, India</p>
-              <p class="duration">Sept 2021 – Feb 2025</p>
-            </div>
-            <div class="company-logo">
-              <img src="static/copado_logo.png" alt="Copado" />
-            </div>
-          </div>
-          <ul class="experience-details">
-            <li>Backend and CLI development of a cloud-based static code analyzer using TypeScript, Node.js, Python, and Docker, empowering developers to detect issues earlier and improve code quality across Salesforce projects</li>
-            <li>Built OAuth and Git provider integrations (Azure DevOps, GitLab, GitHub) using Java, Spring Boot, and Redis enabling seamless repo and PR management; reduced onboarding effort for new projects by >80%, enhancing developer experience</li>
-            <li>Designed libraries and backend services using Java, Python, JavaScript, Docker, Redis, and PostgreSQL accelerating Copado integration into Salesforce ecosystems, reducing pipeline setup time to a few hours</li>
-            <li>Refactored and enhanced the Copado CLI using TypeScript, improving performance and usability</li>
-            <li>Streamlined deployment of 10+ Docker images to Google Kubernetes Engine (GKE) by building efficient, reusable CI/CD pipelines, cutting deployment time by 60%</li>
-            <li>Resolved high-severity production issues and eliminated legacy technical debt reported via Snyk and SonarQube, directly improving platform stability and mitigating major security vulnerabilities</li>
-            <li>Solved authentication scalability challenges by implementing JWT bearer flows using Java, PostgreSQL and Redis, removing manual OAuth setup</li>
-          </ul>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="company-info">
-              <h3>Software Engineering Senior Analyst</h3>
-              <p class="company">Wells Fargo – Bengaluru, India</p>
-              <p class="duration">Mar 2020 – Sept 2021</p>
-            </div>
-            <div class="company-logo">
-              <img src="static/wf_logo.png" alt="Wells Fargo" />
-            </div>
-          </div>
-          <ul class="experience-details">
-            <li>Mentored a team of 4 engineers to design and launch rewards programs for new credit card products using Java, Spring MVC contributing to multimillion-dollar annual revenue growth</li>
-            <li>Implemented traffic management and circuit-breaking using Resilience4j, improving fault tolerance and boosting reliability of critical banking services across on-prem servers</li>
-          </ul>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="company-info">
-              <h3>Associate Software Engineer 2</h3>
-              <p class="company">Wells Fargo – Bengaluru, India</p>
-              <p class="duration">Oct 2018 – Feb 2020</p>
-            </div>
-            <div class="company-logo">
-              <img src="static/wf_logo.png" alt="Wells Fargo" />
-            </div>
-          </div>
-          <ul class="experience-details">
-            <li>Designed and implemented RESTful services using Java and Spring MVC, that integrated with third-party vendors to fetch real-time offers, serving millions of credit card customers with personalized rewards and promotions</li>
-            <li>Revamped the user interface for online banking modules by migrating from a legacy JSP and jQuery stack to React, improving maintainability and performance</li>
-            <li>Mentored incoming interns, providing guidance and onboarding support</li>
-          </ul>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div class="company-info">
-              <h3>Associate Software Engineer 1</h3>
-              <p class="company">Wells Fargo – Bengaluru, India</p>
-              <p class="duration">Jul 2017 – Sept 2018</p>
-            </div>
-            <div class="company-logo">
-              <img src="static/wf_logo.png" alt="Wells Fargo" />
-            </div>
-          </div>
-          <ul class="experience-details">
-            <li>Migrated core monolithic online banking features to modular services using Java and Spring Boot, modernizing the architecture, improving scalability and maintainability</li>
-            <li>Improved code quality of core modules by achieving over 90% code coverage using JUnit and Mockito</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <section id="education" class="section">
-      <h2 class="section-title">Education</h2>
-      <div class="section-content">
-        <div class="education-item">
-          <h3>MS in Computer Science</h3>
-          <p class="institution">Seattle University</p>
-          <p class="details">GPA: 4.0/4.0 • Expected Dec 2026</p>
-          <p class="coursework">Selected Coursework: Software Architecture & Design, Artificial Intelligence, Distributed Systems</p>
-        </div>
-        <div class="education-item">
-          <h3>BE in Information Science and Engineering</h3>
-          <p class="institution">BMS College of Engineering</p>
-          <p class="details">GPA: 8.96/10 • 2017</p>
-        </div>
-      </div>
-    </section>
-    
-    <section id="projects" class="section">
-      <h2 class="section-title">Projects</h2>
-      <div class="section-content">
-        <p>Check back soon for featured projects and contributions!</p>
-      </div>
-    </section>
-  </main>
-  
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Brunda Sreedhara Murthy. All rights reserved.</p>
     </div>
-  </footer>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="tape-label" style="--tape: var(--tape-1)">Projects</span>
+        <h2 id="projects-title">House specials</h2>
+        <p class="section-sub">Two side projects chasing one question: how do you build an AI tool people can actually trust?</p>
+      </header>
+
+      <div class="menu">
+        <article class="dish">
+          <div class="dish-top"><span class="chip">AI pipeline</span><span class="chip chip-teal">Evals</span></div>
+          <div class="dish-name"><h3>Paper → Podcast</h3><span class="leader" aria-hidden="true"></span><span class="price">TypeScript</span></div>
+          <p>Turns an academic paper into a two-host podcast episode that says only what the paper says, and proves it. A judge model scores every script claim by claim, and whisper.cpp transcribes the finished audio to check it still matches.</p>
+          <dl class="dish-stats">
+            <div><dt>faithfulness, claim by claim</dt><dd>93%</dd></div>
+            <div><dt>planted errors caught</dt><dd>11/11</dd></div>
+            <div><dt>unit tests, ~3s to run</dt><dd>608</dd></div>
+          </dl>
+          <ul class="tags"><li>Claude · OpenAI · open models</li><li>Zod</li><li>Piper TTS</li><li>whisper.cpp</li><li>OpenTelemetry</li><li>Next.js</li></ul>
+          <p class="pairs"><span>Pairs well with</span>a long commute and a cortado</p>
+          <a class="dish-link" href="https://github.com/BrundaSreedhar/papercast" target="_blank" rel="noopener">Read the code on GitHub</a>
+        </article>
+
+        <article class="dish">
+          <div class="dish-top"><span class="chip">AI coaching</span><span class="chip chip-gold">Full stack</span></div>
+          <div class="dish-name"><h3>Revise</h3><span class="leader" aria-hidden="true"></span><span class="price">Next.js</span></div>
+          <p>Interview practice for system design, low-level design and DSA. Practice mode is an untimed Socratic coach with escalating hints. Mock mode is a timed interviewer that speaks, listens, pushes back, and hands you a scorecard.</p>
+          <dl class="dish-stats">
+            <div><dt>seeded interview questions</dt><dd>104</dd></div>
+            <div><dt>interview tracks</dt><dd>3</dd></div>
+            <div><dt>spaced-repetition schedule</dt><dd>SM-2</dd></div>
+          </dl>
+          <ul class="tags"><li>Claude API</li><li>TypeScript</li><li>SQLite + Drizzle</li><li>CodeMirror 6</li><li>Web Speech API</li></ul>
+          <p class="pairs"><span>Pairs well with</span>a double espresso, right before the mock</p>
+          <a class="dish-link" href="#contact">Private repo <span class="note">· ask me for a demo</span></a>
+        </article>
+
+        <div class="menu-next">
+          <p><strong>Next on the menu</strong>Something&#8217;s simmering. Ask me what I&#8217;m building this month.</p>
+          <a class="btn btn-small btn-ghost" href="#contact">Ask me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="achievements" class="section" aria-labelledby="achievements-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="tape-label" style="--tape: var(--tape-2)">Achievements</span>
+        <h2 id="achievements-title">Achievements unlocked</h2>
+        <p class="section-sub">Tap a badge to claim it. Every number here is real.</p>
+      </header>
+
+      <ul class="badges">
+        <li><button class="badge" type="button" data-title="Straight A's">
+          <span class="medal m-gold" style="--fs:21px" aria-hidden="true">4.0</span>
+          <span class="badge-text"><strong>Straight A&#8217;s</strong><span class="desc">A 4.0 / 4.0 GPA so far in the MS in Computer Science.</span><span class="from">Seattle University</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Onboarding speedrun">
+          <span class="medal" style="--fs:19px" aria-hidden="true">80%</span>
+          <span class="badge-text"><strong>Onboarding speedrun</strong><span class="desc">Cut onboarding effort for new projects by more than 80% with Git provider integrations.</span><span class="from">Copado</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Faster ship days">
+          <span class="medal m-teal" style="--fs:19px" aria-hidden="true">60%</span>
+          <span class="badge-text"><strong>Faster ship days</strong><span class="desc">Cut deployment time by 60% with reusable CI/CD for 10+ Docker images on GKE.</span><span class="from">Copado</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Level up, twice">
+          <span class="medal m-gold" style="--fs:23px" aria-hidden="true">×2</span>
+          <span class="badge-text"><strong>Level up, twice</strong><span class="desc">Promoted twice at Wells Fargo, from Associate Software Engineer 1 to Senior Analyst.</span><span class="from">Wells Fargo</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Party leader">
+          <span class="medal" style="--fs:28px" aria-hidden="true">4</span>
+          <span class="badge-text"><strong>Party leader</strong><span class="desc">Mentored a team of 4 engineers to launch credit card rewards programs behind multimillion-dollar revenue growth.</span><span class="from">Wells Fargo</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Lie detector">
+          <span class="medal m-teal" style="--fs:16px" aria-hidden="true">11/11</span>
+          <span class="badge-text"><strong>Lie detector</strong><span class="desc">Built an eval harness that caught 11 of 11 planted text errors and 5 of 5 planted audio ones.</span><span class="from">Paper → Podcast</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Green wall">
+          <span class="medal m-gold" style="--fs:19px" aria-hidden="true">608</span>
+          <span class="badge-text"><strong>Green wall</strong><span class="desc">608 unit tests with no network calls, running in about three seconds.</span><span class="from">Paper → Podcast</span></span>
+        </button></li>
+        <li><button class="badge" type="button" data-title="Hobbymaxxer">
+          <span class="medal" style="--fs:28px" aria-hidden="true">5</span>
+          <span class="badge-text"><strong>Hobbymaxxer</strong><span class="desc">Five hobbies, zero off-season. Details below.</span><span class="from">Life</span></span>
+        </button></li>
+        <li><div class="badge is-progress">
+          <span class="medal" style="--fs:21px" aria-hidden="true">&#8217;26</span>
+          <span class="badge-text"><strong>Graduation day</strong><span class="desc">MS in Computer Science, expected December 2026.</span><span class="progress" role="img" aria-label="In progress"><span></span></span><span class="from">In progress</span></span>
+        </div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= HOBBIES ================= -->
+  <section id="hobbies" class="section" aria-labelledby="hobbies-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="tape-label" style="--tape: var(--tape-4)">Hobbies</span>
+        <h2 id="hobbies-title">Hobbymaxxing, explained</h2>
+      </header>
+
+      <p class="definition">
+        <span class="word">hob·by·max·xing</span><span class="pos">verb</span>
+        Having five hobbies and scheduling all of them for the same weekend.
+        <span class="usage">&#8220;Can&#8217;t, I&#8217;m hobbymaxxing: trail at 7, café at 11, dance class at 6.&#8221;</span>
+      </p>
+
+      <ul class="polaroids">
+        <li class="polaroid" style="--tilt:-2.5deg;--photo:#FAD4E1;--tape:var(--tape-2)">
+          <div class="polaroid-photo" aria-hidden="true"><svg viewBox="0 0 100 124"><use href="#s-coffee"/></svg></div>
+          <h3>Café hopping</h3>
+          <p>A new city is just a list of cafés I haven&#8217;t tried yet. I&#8217;m here for the window seat and whatever the barista recommends.</p>
+          <p class="unit">Measured in cortados</p>
+        </li>
+        <li class="polaroid" style="--tilt:1.8deg;--photo:#CBEFE3;--tape:var(--tape-1)">
+          <div class="polaroid-photo" aria-hidden="true"><svg viewBox="0 0 120 120"><use href="#s-mountain"/></svg></div>
+          <h3>Hiking</h3>
+          <p>Switchbacks, summit snacks, and a firm belief that every trail should end near a coffee shop.</p>
+          <p class="unit">Measured in switchbacks</p>
+        </li>
+        <li class="polaroid" style="--tilt:-1.2deg;--photo:#D8DFFF;--tape:var(--tape-3)">
+          <div class="polaroid-photo" aria-hidden="true"><svg viewBox="0 0 150 92"><use href="#s-tag"/></svg></div>
+          <h3>Travel</h3>
+          <p>Carry-on only, a loose itinerary, and at least one day saved for getting lost on purpose.</p>
+          <p class="unit">Measured in passport stamps</p>
+        </li>
+        <li class="polaroid" style="--tilt:2.4deg;--photo:#FCE8B8;--tape:var(--tape-4)">
+          <div class="polaroid-photo" aria-hidden="true"><svg viewBox="0 0 140 104"><use href="#s-scarf"/></svg></div>
+          <h3>Belly dancing</h3>
+          <p>Hip isolations, shimmies, and a coin scarf that announces me before I walk into the room.</p>
+          <p class="unit">Measured in shimmies per minute</p>
+        </li>
+        <li class="polaroid" style="--tilt:-1.8deg;--photo:#E6DCFA;--tape:var(--tape-2)">
+          <div class="polaroid-photo" aria-hidden="true"><svg viewBox="0 0 132 112"><use href="#s-pot"/></svg></div>
+          <h3>Cooking</h3>
+          <p>Recreating dishes I ate on trips: badly the first time, brilliantly by the third. The spice drawer is load-bearing.</p>
+          <p class="unit">Measured in spice jars</p>
+        </li>
+      </ul>
+
+      <div class="weekend">
+        <div class="weekend-stub" aria-hidden="true">Admit one · Saturday</div>
+        <div class="weekend-body">
+          <div class="weekend-head">
+            <h3>A perfectly normal Saturday</h3>
+            <button class="btn btn-small btn-primary" id="replan" type="button">Plan another</button>
+          </div>
+          <ol class="itinerary" id="itinerary" aria-live="polite">
+            <li><time>07:00</time><span class="plan-text">Trailhead at sunrise. Switchbacks before small talk.</span></li>
+            <li><time>12:30</time><span class="plan-text">Coffee at the bottom of the hill, judged entirely on the foam.</span></li>
+            <li><time>18:00</time><span class="plan-text">Belly dance practice until the coin scarf gets a noise complaint.</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section section-last" aria-labelledby="contact-title">
+    <div class="wrap">
+      <header class="section-head">
+        <span class="tape-label" style="--tape: var(--tape-1)">Contact</span>
+        <h2 id="contact-title">Send a postcard</h2>
+        <p class="section-sub">Recruiters, collaborators and café recommendations are all welcome.</p>
+      </header>
+
+      <div class="postcard-edge">
+        <div class="postcard">
+          <div class="pc-left">
+            <p class="pc-greeting">Wish you were here!</p>
+            <p>Hiring for backend or AI engineering? Building something that has to tell the truth? Know a café in Seattle I have to try?</p>
+            <p>My inbox is open for all three.</p>
+            <p class="pc-sign">xo, Brunda</p>
+          </div>
+          <div class="pc-right">
+            <div class="pc-stamps" aria-hidden="true">
+              <svg class="postmark" viewBox="0 0 170 84">
+                <g fill="none" style="stroke: var(--ink-soft)" stroke-width="1.8" opacity=".75">
+                  <circle cx="42" cy="42" r="36"/>
+                  <circle cx="42" cy="42" r="26"/>
+                  <path d="M82 26q10-6 20 0t20 0 20 0 20 0"/>
+                  <path d="M82 42q10-6 20 0t20 0 20 0 20 0"/>
+                  <path d="M82 58q10-6 20 0t20 0 20 0 20 0"/>
+                </g>
+                <path id="pm-arc" d="M42 42m-31 0a31 31 0 1 1 62 0a31 31 0 1 1-62 0" fill="none"/>
+                <text font-family="DM Mono, monospace" font-size="7.4" letter-spacing="1.2" style="fill: var(--ink-soft)" opacity=".85"><textPath href="#pm-arc">SEATTLE WA · HOBBYMAXXING DEPT ·</textPath></text>
+                <text id="pm-date" x="42" y="45" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" font-weight="500" style="fill: var(--ink-soft)">2026</text>
+              </svg>
+              <svg class="stamp" viewBox="0 0 84 100">
+                <rect x="2" y="2" width="80" height="96" fill="#D6336C"/>
+                <rect x="9" y="9" width="66" height="82" fill="#FFF1F6"/>
+                <circle cx="56" cy="32" r="9" fill="#F2AE1C"/>
+                <path d="M9 76l23-30 12 15 10-12 21 27z" fill="#0F7A66"/>
+                <rect x="9" y="76" width="66" height="15" fill="#0A5446"/>
+                <text x="42" y="87" text-anchor="middle" font-family="DM Mono, monospace" font-size="7.5" letter-spacing="1" fill="#FFFFFF">PNW POST</text>
+                <rect x="2" y="2" width="80" height="96" fill="none" style="stroke: var(--surface)" stroke-width="5" stroke-dasharray="0 8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <ul class="pc-address">
+              <li><span class="pc-label">Email</span><a href="mailto:brundasreedhar@gmail.com">brundasreedhar@gmail.com</a><button class="copy" id="copy-email" type="button">Copy</button></li>
+              <li><span class="pc-label">LinkedIn</span><a href="https://linkedin.com/in/brundasreedhar" target="_blank" rel="noopener">in/brundasreedhar</a></li>
+              <li><span class="pc-label">GitHub</span><a href="https://github.com/BrundaSreedhar" target="_blank" rel="noopener">@BrundaSreedhar</a></li>
+              <li><span class="pc-label">Based in</span><span>Seattle, WA</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>Built by hand, between cafés.</p>
+    <p class="mono">© <span id="year">2026</span> Brunda Sreedhara Murthy</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="toast-kicker" id="toast-kicker">Achievement unlocked</span>
+  <strong id="toast-title"></strong>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
