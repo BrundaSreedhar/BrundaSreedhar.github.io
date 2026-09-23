@@ -191,16 +191,6 @@
     }
   });
 
-  /* ---------- Achievements ---------- */
-  $$('.badge[data-title]').forEach((badge) => {
-    badge.addEventListener('click', () => {
-      showToast('Achievement unlocked', badge.dataset.title);
-      badge.classList.remove('is-popped');
-      void badge.offsetWidth;
-      badge.classList.add('is-popped');
-    });
-  });
-
   /* ---------- Copy email ---------- */
   $('#copy-email')?.addEventListener('click', async () => {
     const email = 'brundasreedhar@gmail.com';
